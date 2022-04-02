@@ -6,7 +6,6 @@ import { nftaddress, nftmarketaddress } from '../config';
 import NFT from '../artifacts/contracts/NFT.sol/NFT.json';
 import Market from '../artifacts/contracts/NFTMarket.sol/NFTMarket.json';
 import Image from 'next/image';
-import { test } from './view-nft';
  
 export default function Home() {
   const [nfts, setNfts] = useState([]);
@@ -81,7 +80,7 @@ export default function Home() {
                  {nft.price} ETH
                </p>
                <button className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded"
-               onClick={() => test(nfts)} >View NFT</button>
+               onClick={() => buyNFT()} >Buy NFT</button>
            </div>
            </div>
          ))
