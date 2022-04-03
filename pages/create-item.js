@@ -127,7 +127,6 @@ export default function CreateItem() {
                     />
                     {
                         fileUrl && (
-                           
                             <Image
                             src={fileUrl}
                             alt="Picture of the author"
