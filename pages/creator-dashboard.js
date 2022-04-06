@@ -62,14 +62,12 @@ export default function CreatorDashboard() {
           {
             nfts.map((nft, i) => (
               <div key={i} className="border shadow rounded-xl overflow-hidden">
-               
-
                         <Image
                             src={nft.image}
                             alt="Picture of the author"
                             className="rounded"
-                            width={250}
-                            height={300} 
+                            width={400}
+                            height={250}
                             // blurDataURL="data:..." automatically provided
                             // placeholder="blur" // Optional blur-up while loading
                           />
