@@ -32,6 +32,7 @@ export default function CreateItem() {
             console.log(e);
         }
     }
+
     //1. create item (image/video) and upload to ipfs
     async function createItem() {
         const { name, description, price } = formInput; //get the value from the form input
